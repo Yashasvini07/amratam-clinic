@@ -1,6 +1,7 @@
 import Button from "../ui/Button";
 import { Heart } from "lucide-react";
 import Section from "../ui/Section";
+import Link from "next/link";
 
 export default function CTA() { 
     return (
@@ -20,10 +21,12 @@ export default function CTA() {
                 </p>
 
                 <div className="mt-10">
+                    <Link href = "/contact">
                     <Button
                         text="Book a Consultation"
                         showArrow
                     />
+                    </Link>
                 </div>
             </div>
         </Section>

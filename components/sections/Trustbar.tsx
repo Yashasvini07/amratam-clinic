@@ -3,15 +3,15 @@ import Container from "@/components/ui/Container";
 const trustItems = [
     {
         title: "15+",
-        description: "Years of Experience in Electrohomeopathy and Naturopathy, providing expert care to our patients.",
+        description: "Years of Experience in Electrohomeopathy and Bachflower, providing expert care to our patients.",
     },
     {
-        title: "1000+",
+        title: "500+",
         description: "Patients Treated, with a focus on holistic healing and personalised care.",
     },
     {
         title: "Natural",
-        description: "Holistic Care, using natural remedies and therapies to support the body's innate healing abilities.",
+        description: "100 percent naturally derived from flowers and medicinal plants",
     },
     {
         title: "Evidence-Based",

@@ -3,6 +3,7 @@ import Container from "@/components/ui/Container";
 type SectionProps = {
     children: React.ReactNode;
     className?: string;
+    containerClassName?: string;
     background?: "light" | "dark" | "white";
 };
 
@@ -15,13 +16,14 @@ const backgrounds = {
 export default function Section({
     children,
     className = "",
+    containerClassName = "",
     background = "light",
 }: SectionProps) {
     return (
         <section
             className={`${backgrounds[background]} py-24 ${className}`}
         >
-            <Container>
+            <Container className={containerClassName}>
                 {children}
             </Container>
         </section>

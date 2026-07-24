@@ -1,33 +1,43 @@
 import { Star } from "lucide-react";
+import { Testimonial } from "@/lib/testimonials";
 
 type TestimonialCardProps = {
-    name: string;
-    condition: string;
-    quote: string;
-    rating: number;
+  testimonial: Testimonial;
 };
 
-export default function TestimonialCard({ name, condition, quote, rating }: TestimonialCardProps) {
-    return (
-        <div className="bg-white rounded-lg border border-gray-200 p-6 hover:border-[#D08F59] transition-colors duration-300">
-            <div className="flex gap-1 items-center mb-4">
-            {Array.from({ length: rating }).map((_, i) => (
-                        <Star
-                            key={i}
-                            size={16}
-                            fill="#D08F59"
-                            color="#D08F59"
-                        />
-                    ))}
-            </div>
-            <p className="text-gray-700 mb-4">&ldquo;{quote}&rdquo;</p>
-            <hr className="my-7 border-gray-200" />
-            <div className="flex flex-col items-center">
-                <div className="ml-4">
-                    <p className="text-gray-900 font-semibold">{name}</p>
-                    <p className="text-gray-600 text-sm">{condition}</p>
-                </div>
-            </div>
-        </div>
-    );
+export default function TestimonialCard({
+  testimonial,
+}: TestimonialCardProps) {
+  return (
+    <div className="rounded-xl border border-stone-200 bg-white p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg">
+      <div className="mb-6 flex">
+        {Array.from({ length: testimonial.rating }).map((_, i) => (
+          <Star
+            key={i}
+            size={18}
+            fill="#D08F59"
+            color="#D08F59"
+          />
+        ))}
+      </div>
+
+      <p className="leading-8 text-gray-600 italic">
+        &ldquo;{testimonial.quote}&rdquo;
+      </p>
+
+      <div className="mt-8 border-t border-stone-200 pt-6">
+        <h3 className="font-semibold text-[#264B43]">
+          {testimonial.name}
+        </h3>
+
+        <p className="mt-1 text-sm text-gray-500">
+          {testimonial.condition}
+        </p>
+
+        <p className="text-sm text-[#D08F59]">
+          {testimonial.treatment}
+        </p>
+      </div>
+    </div>
+  );
 }

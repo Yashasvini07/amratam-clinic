@@ -1,6 +1,6 @@
 import Container from "../ui/Container";
 import ServiceCard from "../ui/ServiceCard";
-import { services } from "@/lib/ServiceCard"; 
+import { services } from "@/lib/services";
 
 export default function Services() {
     return (
@@ -22,14 +22,24 @@ export default function Services() {
                 </div>
 
                 <div className="flex grid grid-cols-2 gap-8">
-                    {services.map((service, index) => (
-                        <ServiceCard
-                            key={index}
-                            category={service.category}
-                            title={service.title}
-                            description={service.description}
-                            image={service.image}
-                        />
+                    {services.map(service => (
+
+                    <ServiceCard
+
+                        key={service.slug}
+
+                        slug={service.slug}
+
+                        category={service.category}
+
+                        title={service.title}
+
+                        description={service.shortDescription}
+
+                        image={service.heroImage}
+
+                    />
+
                     ))}
                 </div>
             </Container>
