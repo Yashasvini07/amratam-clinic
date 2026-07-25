@@ -27,22 +27,32 @@ export default function Navbar() {
                 </div>
             </Link>
             <div className=" flex items-center space-x-6 text-gray-700">
-                {navigation.map((item) => (
-                    <Link
+                {navigation.map((item) => {
+                    const isActive =
+                        item.href === "/"
+                            ? pathname === "/"
+                            : pathname.startsWith(item.href);
+                    return (
+                        <Link
                         key={item.label}
                         href={item.href}
                         className={`transition-colors duration-200 ${
-                            pathname === item.href
+                            isActive
                                 ? "text-[#D08F59] font-medium"
                                 : "text-gray-700 hover:text-[#D08F59]"
                         }`}
                     >
                         {item.label}
                     </Link>
-                ))}
+                    );
+                })}
             </div>
             <div>
-                <Button text="Book Consultation" />
+                <Link href="/contact">
+                    <Button
+                    text="Book a Consultation"
+                    />
+                </Link>
             </div>
         </Container>
     </nav>

@@ -1,5 +1,6 @@
 import Button from "@/components/ui/Button";
 import Container from "../ui/Container";
+import Link from "next/link";
 
 export default function Hero () {
     return (
@@ -18,13 +19,25 @@ export default function Hero () {
                 </h1>
 
                 <p className="max-w-xl text-lg leading-8 text-gray-200">
-                    Specialising in Electrohomeopathy and Naturopathy, we offer personalised care that treats the whole person — body, mind, and vital energy.
+                    Specialising in Electrohomeopathy and Bachflower, we offer personalised care that treats the whole person — body, mind, and vital energy.
                 </p>
-
+                
                 <div className="mt-10 flex gap-6">
-                    <Button text="Book a Consultation" showArrow={true} /> 
-                    <Button text="Explore Services" variant="outline" showArrow={true} />
-                </div>
+                    <Link href="/contact">
+                        <Button
+                        text="Book a Consultation"
+                        showArrow
+                        />
+                    </Link>
+
+                    <Link href="/services">
+                        <Button
+                        text="Explore Services"
+                        variant="outline"
+                        showArrow
+                        />
+                    </Link>
+                    </div>
                 </div>
             </Container>
         </section>
