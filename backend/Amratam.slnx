@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Amratam.Api/Amratam.Api.csproj" />
+    <Project Path="src/Amratam.Application/Amratam.Application.csproj" />
+    <Project Path="src/Amratam.Domain/Amratam.Domain.csproj" />
+    <Project Path="src/Amratam.Infrastructure/Amratam.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Amratam.Api.Tests/Amratam.Api.Tests.csproj" />
+  </Folder>
+</Solution>
