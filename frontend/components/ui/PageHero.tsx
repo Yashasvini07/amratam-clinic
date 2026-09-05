@@ -12,7 +12,7 @@ export default function PageHero({
   align = "center",
 }: PageHeroProps) {
   return (
-    <section className="bg-[#264B43] py-12 md:py-20 lg:py-24">
+    <section className="bg-[#264B43] py-10 sm:py-14 md:py-16 lg:py-20">
       <Container>
         <div
           className={`max-w-4xl ${
