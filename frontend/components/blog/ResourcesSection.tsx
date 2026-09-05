@@ -32,18 +32,18 @@ export default function ResourcesSection() {
   ];
 
   return (
-    <section className="bg-[#FDFBF8] py-24">
+    <section className="bg-[#FDFBF8] py-12 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-6">
 
-        <p className="uppercase tracking-[0.3em] text-sm text-[#D08F59]">
+        <p className="uppercase tracking-[0.25em] text-xs text-[#D08F59] sm:tracking-[0.3em] sm:text-sm">
           Beyond the Clinic
         </p>
 
-        <h2 className="mt-4 font-serif text-5xl text-[#264B43]">
+        <h2 className="mt-4 font-serif text-3xl text-[#264B43] sm:text-4xl md:text-5xl">
           Learn wherever you are
         </h2>
 
-        <div className="mt-16 grid gap-8 md:grid-cols-3">
+        <div className="mt-8 grid gap-6 sm:mt-16 sm:gap-8 md:grid-cols-3">
 
           {resources.map((resource) => {
 

@@ -17,7 +17,7 @@ const icons = {
 
 export default function DoctorProfile() {
   return (
-    <div className="grid grid-cols-1 items-start gap-16 lg:grid-cols-2">
+    <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-16">
       {/* Doctor Image */}
       <div>
         <Image
@@ -25,26 +25,26 @@ export default function DoctorProfile() {
           alt={doctor.name}
           width={550}
           height={700}
-          className="rounded-xl object-cover shadow-lg"
+          className="w-full rounded-xl object-cover shadow-lg"
         />
       </div>
 
       {/* Doctor Information */}
       <div>
-        <p className="mb-3 uppercase tracking-[0.3em] text-sm text-[#D08F59]">
+        <p className="mb-3 uppercase tracking-[0.25em] text-xs text-[#D08F59] sm:tracking-[0.3em] sm:text-sm">
           {doctor.designation}
         </p>
 
-        <h2 className="font-serif text-5xl leading-tight text-[#264B43]">
+        <h2 className="font-serif text-3xl leading-tight text-[#264B43] sm:text-4xl md:text-5xl">
           {doctor.name}
         </h2>
 
-        <p className="mt-4 text-xl text-gray-500">
+        <p className="mt-4 text-lg text-gray-500 sm:text-xl">
           {doctor.degree}
         </p>
 
         {/* Biography */}
-        <div className="mt-10 space-y-6 text-lg leading-8 text-gray-600">
+        <div className="mt-8 space-y-6 text-base leading-7 text-gray-600 sm:mt-10 sm:text-lg sm:leading-8">
           {doctor.story.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}

@@ -12,11 +12,11 @@ export default function AboutTabs() {
     <Section background="light" className="pt-0">
       <div className="w-full">
 
-        <div className="mb-16 flex border-b border-stone-200">
+        <div className="mb-8 flex border-b border-stone-200 sm:mb-16">
 
           <button
             onClick={() => setActiveTab("doctor")}
-            className={`px-8 py-5 text-lg font-medium transition-colors ${
+            className={`px-4 py-4 text-base font-medium transition-colors sm:px-8 sm:py-5 sm:text-lg ${
               activeTab === "doctor"
                 ? "border-b-2 border-[#D08F59] text-[#264B43]"
                 : "text-gray-500 hover:text-[#264B43]"
@@ -27,7 +27,7 @@ export default function AboutTabs() {
 
           <button
             onClick={() => setActiveTab("philosophy")}
-            className={`px-8 py-5 text-lg font-medium transition-colors ${
+            className={`px-4 py-4 text-base font-medium transition-colors sm:px-8 sm:py-5 sm:text-lg ${
               activeTab === "philosophy"
                 ? "border-b-2 border-[#D08F59] text-[#264B43]"
                 : "text-gray-500 hover:text-[#264B43]"

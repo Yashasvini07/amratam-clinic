@@ -9,8 +9,8 @@ export default function ContactPage() {
       <main className="bg-[#FDFBF8]">
         <PageHero {...pageMetadata.contact} />
 
-        <section className="mx-auto max-w-7xl px-6 py-24">
-            <div className="grid gap-20 lg:grid-cols-[0.9fr_1.1fr]">
+        <section className="mx-auto max-w-7xl px-6 py-12 sm:py-20 lg:py-24">
+            <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
             <ClinicDetails />
             <AppointmentForm />
             </div>

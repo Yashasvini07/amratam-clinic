@@ -128,10 +128,10 @@ export default function AdminDashboardPage() {
   }
 
   return (
-    <div className="mx-auto max-w-4xl px-6 py-16">
-      <div className="mb-10 flex items-center justify-between">
+    <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 sm:py-16">
+      <div className="mb-8 flex flex-wrap items-center justify-between gap-3 sm:mb-10">
         <div>
-          <h1 className="text-2xl font-medium text-[#264B43]">Amratam Clinic — Admin</h1>
+          <h1 className="text-xl font-medium text-[#264B43] sm:text-2xl">Amratam Clinic — Admin</h1>
           <p className="text-sm text-gray-600">Signed in as {username}</p>
         </div>
         <button
@@ -218,18 +218,18 @@ export default function AdminDashboardPage() {
           Block a date when the clinic is closed so patients can&rsquo;t book it online.
         </p>
 
-        <form onSubmit={handleBlockDate} className="mb-6 flex flex-wrap items-end gap-3">
-          <div>
+        <form onSubmit={handleBlockDate} className="mb-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-end">
+          <div className="w-full sm:w-auto">
             <label className="mb-1 block text-xs uppercase tracking-[0.2em] text-gray-600">Date</label>
             <input
               type="date"
               min={todayIsoDate()}
               value={blockDate}
               onChange={(e) => setBlockDate(e.target.value)}
-              className="rounded-lg border border-stone-200 bg-[#FDFBF8] p-3"
+              className="w-full rounded-lg border border-stone-200 bg-[#FDFBF8] p-3 sm:w-auto"
             />
           </div>
-          <div className="flex-1 min-w-[160px]">
+          <div className="w-full flex-1 sm:min-w-[160px]">
             <label className="mb-1 block text-xs uppercase tracking-[0.2em] text-gray-600">Reason (optional)</label>
             <input
               value={blockReason}
@@ -241,7 +241,7 @@ export default function AdminDashboardPage() {
           <button
             type="submit"
             disabled={blockSubmitting}
-            className="rounded-md bg-[#D08F59] px-6 py-3 text-sm font-medium text-white hover:bg-[#B97C4A] disabled:cursor-not-allowed disabled:opacity-60"
+            className="w-full rounded-md bg-[#D08F59] px-6 py-3 text-sm font-medium text-white hover:bg-[#B97C4A] disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
           >
             Block Date
           </button>

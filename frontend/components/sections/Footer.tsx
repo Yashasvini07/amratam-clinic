@@ -14,8 +14,8 @@ import {
 
 export default function Footer() {
   return (
-    <section className="bg-[#264B43] pt-16 pb-12">
-      <Container className="grid grid-cols-1 items-start gap-16 text-white md:grid-cols-[1.2fr_0.8fr_0.8fr_1.5fr]">
+    <section className="bg-[#264B43] pt-10 pb-8 sm:pt-16 sm:pb-12">
+      <Container className="grid grid-cols-1 items-start gap-10 text-white sm:grid-cols-2 sm:gap-12 md:grid-cols-[1.2fr_0.8fr_0.8fr_1.5fr] md:gap-16">
         {/* 1. Clinic Details */}
         <div className="space-y-5">
           <Image

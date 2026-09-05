@@ -12,7 +12,7 @@ export default function PageHero({
   align = "center",
 }: PageHeroProps) {
   return (
-    <section className="bg-[#264B43] py-24">
+    <section className="bg-[#264B43] py-12 md:py-20 lg:py-24">
       <Container>
         <div
           className={`max-w-4xl ${
@@ -21,11 +21,11 @@ export default function PageHero({
               : "text-left"
           }`}
         >
-          <p className="mb-6 uppercase tracking-[0.35em] text-sm text-[#D08F59]">
+          <p className="mb-4 uppercase tracking-[0.3em] text-xs text-[#D08F59] sm:mb-6 sm:tracking-[0.35em] sm:text-sm">
             {eyebrow}
           </p>
 
-          <h1 className="font-serif text-5xl leading-tight text-white md:text-6xl">
+          <h1 className="font-serif text-3xl leading-tight text-white sm:text-5xl md:text-6xl">
             {title}
           </h1>
         </div>

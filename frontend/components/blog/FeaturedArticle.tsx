@@ -9,31 +9,31 @@ type Props = {
 
 export default function FeaturedArticle({ article }: Props) {
   return (
-    <section className="py-24">
-      <div className="mx-auto grid max-w-7xl items-center gap-20 px-6 lg:grid-cols-2">
+    <section className="py-12 sm:py-20 lg:py-24">
+      <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 lg:grid-cols-2 lg:gap-20">
 
         <Image
           src={article.coverImage}
           alt={article.title}
           width={700}
           height={500}
-          className="rounded-xl object-cover shadow-lg"
+          className="w-full rounded-xl object-cover shadow-lg"
         />
 
         <div>
-          <p className="uppercase tracking-[0.3em] text-sm text-[#D08F59]">
+          <p className="uppercase tracking-[0.25em] text-xs text-[#D08F59] sm:tracking-[0.3em] sm:text-sm">
             Featured Article
           </p>
 
-          <h2 className="mt-4 font-serif text-5xl text-[#264B43]">
+          <h2 className="mt-4 font-serif text-3xl text-[#264B43] sm:text-4xl md:text-5xl">
             {article.title}
           </h2>
 
-          <p className="mt-8 text-lg leading-9 text-gray-600">
+          <p className="mt-6 text-base leading-7 text-gray-600 sm:mt-8 sm:text-lg sm:leading-9">
             {article.excerpt}
           </p>
 
-          <div className="mt-10 flex items-center gap-6 text-sm text-gray-500">
+          <div className="mt-8 flex flex-wrap items-center gap-3 text-sm text-gray-500 sm:mt-10 sm:gap-6">
             <span>{article.author}</span>
             <span>•</span>
             <span>{article.publishedOn}</span>

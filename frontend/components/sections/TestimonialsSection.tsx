@@ -21,7 +21,7 @@ export default function TestimonialsSection({ limit }: Props) {
         description="Real experiences from people who have trusted us with their health."
       />
 
-      <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-8 grid gap-6 sm:mt-16 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
         {displayedTestimonials.map((testimonial) => (
           <TestimonialCard
             key={testimonial.name}
