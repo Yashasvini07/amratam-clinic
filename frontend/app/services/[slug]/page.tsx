@@ -3,6 +3,7 @@ import ServiceTabs from "@/components/services/ServiceTabs";
 import ServiceOverview from "@/components/services/ServiceOverview";
 import { services } from "@/lib/services";
 import PageHero from "@/components/ui/PageHero";
+import Section from "@/components/ui/Section";
 import { pageMetadata } from "@/lib/site";
 
 type Props = {
@@ -25,13 +26,15 @@ export default async function ServicePage({ params }: Props) {
       <main className="bg-[#FDFBF8]">
         <PageHero {...pageMetadata.services} />
 
-        <ServiceTabs />
-        <ServiceOverview
-          title={service.title}
-          subtitle={service.subtitle}
-          content={service.content}
-          image={service.heroImage}
-        />
+        <Section background="light" className="pt-0">
+          <ServiceTabs />
+          <ServiceOverview
+            title={service.title}
+            subtitle={service.subtitle}
+            content={service.content}
+            image={service.heroImage}
+          />
+        </Section>
       </main>
     </>
   );

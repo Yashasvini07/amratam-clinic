@@ -28,7 +28,7 @@ export default function Navbar() {
   }, [isOpen]);
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-gray-200 bg-[#FDFBF8]/95 backdrop-blur-md">
+    <nav className="sticky top-0 z-50 border-b border-gray-200 bg-[#FDFBF8]">
         <Container className="flex h-20 items-center justify-between md:h-24">
             <Link href="/" className="flex items-center gap-3" onClick={() => setIsOpen(false)}>
                 <Image
@@ -36,10 +36,10 @@ export default function Navbar() {
                     alt="Amratam Clinic Logo"
                     width={120}
                     height={120}
-                    className="h-14 w-14 md:h-[120px] md:w-[120px]"
+                    className="h-auto w-14 md:w-[120px]"
                 />
                 <div>
-                    <h1 className="font-[family:var(--font-cormorant)] text-base text-gray-900 sm:text-xl md:text-2xl">Dr. Abhilasha Chourasiya</h1>
+                    <h1 className="font-[family:var(--font-cormorant)] text-base text-gray-900 sm:text-lg md:text-xl">Dr. Abhilasha Chourasiya</h1>
                     <p className="text-xs text-gray-500 md:text-sm">MD-Electrohomeopathy</p>
                 </div>
             </Link>
