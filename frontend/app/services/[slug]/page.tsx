@@ -26,7 +26,7 @@ export default async function ServicePage({ params }: Props) {
       <main className="bg-[#FDFBF8]">
         <PageHero {...pageMetadata.services} />
 
-        <Section background="light" className="pt-0">
+        <Section background="light" noTopPadding>
           <ServiceTabs />
           <ServiceOverview
             title={service.title}

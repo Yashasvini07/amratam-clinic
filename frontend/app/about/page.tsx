@@ -7,7 +7,7 @@ export default function AboutPage() {
   return (
     <>
       <PageHero {...pageMetadata.about} />
-      <Section background="light" className="pt-0">
+      <Section background="light" noTopPadding>
         <AboutTabs />
       </Section>
       

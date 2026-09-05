@@ -9,7 +9,7 @@ export default function AboutTabs() {
   const [activeTab, setActiveTab] = useState<"doctor" | "philosophy">("doctor");
 
   return (
-    <Section background="light" className="pt-0">
+    <Section background="light" noTopPadding>
       <div className="w-full">
 
         <div className="mb-8 flex border-b border-stone-200 sm:mb-16">

@@ -14,7 +14,7 @@ export default function ServicesPage() {
       <main className="bg-[#FDFBF8]">
         <PageHero {...pageMetadata.services} />
 
-        <Section background="light" className="pt-0">
+        <Section background="light" noTopPadding>
           <ServiceTabs />
 
           <ServiceOverview
