@@ -19,7 +19,7 @@ export default function TestimonialsPage() {
 
             <FeaturedStory testimonial={featured} />
 
-            <TestimonialsSection />
+            <TestimonialsSection className="pt-0" />
         </Section>
       
       </main>

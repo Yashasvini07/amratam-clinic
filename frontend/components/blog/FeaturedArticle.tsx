@@ -9,7 +9,7 @@ type Props = {
 
 export default function FeaturedArticle({ article }: Props) {
   return (
-    <section className="py-12 sm:py-20 lg:py-24">
+    <section className="pt-8 pb-12 sm:pt-10 sm:pb-16 lg:pt-12 lg:pb-20">
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 lg:grid-cols-2 lg:gap-20">
 
         <Image

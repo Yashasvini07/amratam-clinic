@@ -6,15 +6,16 @@ import { testimonials } from "@/lib/testimonials";
 
 type Props = {
   limit?: number;
+  className?: string;
 };
 
-export default function TestimonialsSection({ limit }: Props) {
+export default function TestimonialsSection({ limit, className = "" }: Props) {
   const displayedTestimonials = limit
     ? testimonials.slice(0, limit)
     : testimonials;
 
   return (
-    <Section background="light">
+    <Section background="light" className={className}>
       <SectionHeader
         eyebrow="PATIENT STORIES"
         title="What our patients say"

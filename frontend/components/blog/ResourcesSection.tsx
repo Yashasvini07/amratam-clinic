@@ -32,7 +32,7 @@ export default function ResourcesSection() {
   ];
 
   return (
-    <section className="bg-[#FDFBF8] py-12 sm:py-20 lg:py-24">
+    <section className="bg-[#FDFBF8] pt-0 pb-12 sm:pb-16 lg:pb-20">
       <div className="mx-auto max-w-7xl px-6">
 
         <p className="uppercase tracking-[0.25em] text-xs text-[#D08F59] sm:tracking-[0.3em] sm:text-sm">

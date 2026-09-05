@@ -2,7 +2,7 @@ import { Star } from "lucide-react";
 
 export default function RatingSummary() {
   return (
-    <section className="pt-0 pb-12 sm:pb-20">
+    <section className="pt-0 pb-12 sm:pb-16 lg:pb-20">
       <div className="mx-auto max-w-3xl text-center">
 
         <div className="flex justify-center gap-2">
