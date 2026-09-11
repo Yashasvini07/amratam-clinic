@@ -6,22 +6,23 @@ import { testimonials } from "@/lib/testimonials";
 
 type Props = {
   limit?: number;
+  noTopPadding?: boolean;
 };
 
-export default function TestimonialsSection({ limit }: Props) {
+export default function TestimonialsSection({ limit, noTopPadding = false }: Props) {
   const displayedTestimonials = limit
     ? testimonials.slice(0, limit)
     : testimonials;
 
   return (
-    <Section background="light">
+    <Section background="light" noTopPadding={noTopPadding}>
       <SectionHeader
         eyebrow="PATIENT STORIES"
         title="What our patients say"
         description="Real experiences from people who have trusted us with their health."
       />
 
-      <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-8 grid gap-6 sm:mt-16 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
         {displayedTestimonials.map((testimonial) => (
           <TestimonialCard
             key={testimonial.name}

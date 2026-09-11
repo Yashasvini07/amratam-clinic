@@ -12,7 +12,7 @@ export default function ClinicDetails() {
   return (
     <div>
 
-      <h2 className="font-serif text-4xl text-[#264B43]">
+      <h2 className="font-serif text-2xl text-[#264B43] sm:text-4xl">
         Clinic details
       </h2>
 

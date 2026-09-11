@@ -10,12 +10,12 @@ const tabs = [
 export default function BlogTabs() {
   return (
     <div className="border-b border-stone-200">
-      <div className="mx-auto flex max-w-7xl gap-12 px-6">
+      <div className="mx-auto flex max-w-7xl gap-6 overflow-x-auto px-6 sm:gap-12">
 
         {tabs.map((tab, index) => (
           <button
             key={tab}
-            className={`border-b-2 py-6 transition-colors ${
+            className={`whitespace-nowrap border-b-2 py-4 text-sm transition-colors sm:py-6 sm:text-base ${
               index === 0
                 ? "border-[#D08F59] text-[#D08F59]"
                 : "border-transparent text-gray-500 hover:text-[#D08F59]"

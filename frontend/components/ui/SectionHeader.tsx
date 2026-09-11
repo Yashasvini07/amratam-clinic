@@ -9,17 +9,17 @@ export default function SectionHeader({ eyebrow, title, description, centered = 
     const alignment = centered ? "text-center mx-auto" : "text-left";
 
     return (
-        <div className={`${alignment} mb-12 max-w-3xl`}>
-            <p className="mb-2 text-sm uppercase tracking-[0.3em] text-[#D08F59]">
+        <div className={`${alignment} mb-8 max-w-3xl sm:mb-12`}>
+            <p className="mb-2 text-xs uppercase tracking-[0.25em] text-[#D08F59] sm:tracking-[0.3em] sm:text-sm">
                 {eyebrow}
             </p>
 
-            <h2 className="font-serif text-5xl leading-tight text-[#264B43]">
+            <h2 className="font-serif text-3xl leading-tight text-[#264B43] sm:text-4xl md:text-5xl">
                 {title}
             </h2>
 
             {description && (
-                <p className="mt-6 text-lg leading-8 text-gray-600">
+                <p className="mt-4 text-base leading-7 text-gray-600 sm:mt-6 sm:text-lg sm:leading-8">
                     {description}
                 </p>
             )}
