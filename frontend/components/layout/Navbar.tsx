@@ -85,7 +85,7 @@ export default function Navbar() {
         </Container>
 
         <div
-            className={`fixed inset-0 z-50 bg-black/40 transition-opacity duration-300 md:hidden ${
+            className={`fixed inset-x-0 bottom-0 top-20 z-40 bg-black/40 transition-opacity duration-300 md:top-24 md:hidden ${
                 isOpen ? "opacity-100" : "pointer-events-none opacity-0"
             }`}
             onClick={() => setIsOpen(false)}

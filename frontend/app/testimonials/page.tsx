@@ -14,7 +14,7 @@ export default function TestimonialsPage() {
       <main>
         <PageHero {...pageMetadata.testimonials} />
 
-        <Section background="light" noTopPadding>
+        <Section background="light" noTopPadding noBottomPadding>
             <RatingSummary />
 
             <FeaturedStory testimonial={featured} />
