@@ -8,15 +8,15 @@ export default function CTA() {
         <Section background="dark">
             <div className="flex flex-col items-center text-center">
                 <Heart
-                    size={36}
-                    className="mb-8 text-[#D08F59]"
+                    size={32}
+                    className="mb-6 text-[#D08F59] sm:mb-8"
                 />
 
-                <h2 className="max-w-3xl font-serif text-5xl text-white leading-tight">
+                <h2 className="max-w-3xl font-serif text-3xl text-white leading-tight sm:text-4xl md:text-5xl">
                     Begin your journey to lasting wellness
                 </h2>
 
-                <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-300">
+                <p className="mt-4 max-w-2xl text-base leading-7 text-gray-300 sm:mt-6 sm:text-lg sm:leading-8">
                     Schedule a consultation today and discover what natural healing can do for you.
                 </p>
 

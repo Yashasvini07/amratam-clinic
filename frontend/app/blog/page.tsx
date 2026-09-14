@@ -28,7 +28,7 @@ export default function BlogPage() {
 
         <PageHero {...pageMetadata.blog} />
 
-        <Section background="light" className="pt-0">
+        <Section background="light" noTopPadding>
           <BlogTabs featured={featured} articles={articles} allPosts={allPosts} />
 
           <ResourcesSection />

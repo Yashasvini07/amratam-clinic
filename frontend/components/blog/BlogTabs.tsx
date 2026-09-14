@@ -48,14 +48,14 @@ function BlogTabsShell({ activeTab, featured, articles, allPosts }: Props & { ac
         id="blog-tabs"
         className="border-b border-stone-200 scroll-mt-24"
       >
-        <div className="mx-auto flex max-w-7xl gap-12 px-6">
+        <div className="mx-auto flex max-w-7xl gap-6 overflow-x-auto px-6 sm:gap-12">
 
           {tabs.map((tab) => (
             <Link
               key={tab.key}
               href={tab.key === "articles" ? "/blog" : `/blog?tab=${tab.key}`}
               scroll={false}
-              className={`border-b-2 py-6 transition-colors ${
+              className={`whitespace-nowrap border-b-2 py-4 text-sm transition-colors sm:py-6 sm:text-base ${
                 activeTab === tab.key
                   ? "border-[#D08F59] text-[#D08F59]"
                   : "border-transparent text-gray-500 hover:text-[#D08F59]"

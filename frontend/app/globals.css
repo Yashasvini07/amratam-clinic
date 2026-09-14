@@ -16,4 +16,8 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  /* clip (not hidden) — hidden would force overflow-y from visible to auto per
+     the CSS overflow spec, which breaks position: sticky on Safari/WebKit for
+     descendants like the Navbar. clip is exempt from that pairing rule. */
+  overflow-x: clip;
 }
