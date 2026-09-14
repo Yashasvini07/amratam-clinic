@@ -23,7 +23,7 @@ export default function Navbar() {
                 /> 
                 <div>
                     <h1 className="font-[family:var(--font-cormorant)] text-2xl text-xl text-gray-900">Dr. Abhilasha Chourasiya</h1>
-                    <p className="text-sm text-gray-500">MD-Electrohomeopathy</p>
+                    <p className="text-sm text-gray-500">MD-Electro Homeopathy</p>
                 </div>
             </Link>
             <div className=" flex items-center space-x-6 text-gray-700">

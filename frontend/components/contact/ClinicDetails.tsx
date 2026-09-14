@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   MapPin,
   Phone,
@@ -62,17 +63,20 @@ export default function ClinicDetails() {
 
       </div>
 
-      <div className="mt-14 overflow-hidden rounded-xl border border-stone-200">
-
+      <Link
+        href={clinic.mapsUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-14 block overflow-hidden rounded-xl border border-stone-200 transition-opacity hover:opacity-90"
+      >
         <Image
-          src="/images/map-placeholder.jpg"
-          alt="Clinic location"
+          src="/images/clinic-location.png"
+          alt="Clinic location — click to open in Google Maps"
           width={600}
           height={400}
           className="w-full"
         />
-
-      </div>
+      </Link>
 
     </div>
   );

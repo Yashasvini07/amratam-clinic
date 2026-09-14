@@ -16,19 +16,18 @@ public static class TableStorageSeeder
         ILogger logger,
         CancellationToken cancellationToken = default)
     {
-        if (!await services.AnyAsync(cancellationToken))
+        var seedServices = new[]
         {
-            await services.AddAsync(new Service
+            new Service
             {
                 Id = "electrohomeopathy",
                 Slug = "electrohomeopathy",
-                Name = "Electrohomeopathy",
+                Name = "Electro Homeopathy",
                 ShortDescription = "A holistic approach to healing that uses natural remedies and therapies to support the body's innate healing abilities.",
                 DurationMinutes = 45,
                 DisplayOrder = 1
-            }, cancellationToken);
-
-            await services.AddAsync(new Service
+            },
+            new Service
             {
                 Id = "bachflower",
                 Slug = "bachflower",
@@ -36,10 +35,24 @@ public static class TableStorageSeeder
                 ShortDescription = "A natural and evidence-based approach to healthcare that focuses on prevention, wellness, and the body's ability to heal itself.",
                 DurationMinutes = 45,
                 DisplayOrder = 2
-            }, cancellationToken);
+            },
+            new Service
+            {
+                Id = "biochemic-tissue-salts",
+                Slug = "biochemic-tissue-salts",
+                Name = "Bio Chemic Tissue Salts & Naturopathy",
+                ShortDescription = "Mineral-based remedies developed by Dr. Schuessler, supporting bone, mood, nerve and muscle health by restoring the body's natural cellular balance.",
+                DurationMinutes = 45,
+                DisplayOrder = 3
+            },
+        };
 
-            logger.LogInformation("Seeded services");
+        foreach (var service in seedServices)
+        {
+            await services.UpsertAsync(service, cancellationToken);
         }
+
+        logger.LogInformation("Seeded {Count} services", seedServices.Length);
 
         if (!await templates.AnyAsync(cancellationToken))
         {

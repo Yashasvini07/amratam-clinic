@@ -1,19 +1,23 @@
 import PageHero from "@/components/ui/PageHero";
 import { pageMetadata } from "@/lib/site";
 import BlogTabs from "@/components/blog/BlogTabs";
-import FeaturedArticle from "@/components/blog/FeaturedArticle";
-import ArticleGrid from "@/components/blog/ArticleGrid";
 import ResourcesSection from "@/components/blog/ResourcesSection";
 import Section from "@/components/ui/Section";
-import { blogPosts } from "@/lib/blog";
+import { blogPosts, BlogPost, BlogPostMeta } from "@/lib/blog";
+
+function stripContent({ content: _content, ...meta }: BlogPost): BlogPostMeta {
+  return meta;
+}
 
 export default function BlogPage() {
 
-  const featured = blogPosts.find(
+  const allPosts = blogPosts.map(stripContent);
+
+  const featured = allPosts.find(
     article => article.featured
   )!;
 
-  const articles = blogPosts.filter(
+  const articles = allPosts.filter(
     article => !article.featured
   );
 
@@ -25,11 +29,7 @@ export default function BlogPage() {
         <PageHero {...pageMetadata.blog} />
 
         <Section background="light" className="pt-0">
-          <BlogTabs />
-
-          <FeaturedArticle article={featured} />
-
-          <ArticleGrid articles={articles} />
+          <BlogTabs featured={featured} articles={articles} allPosts={allPosts} />
 
           <ResourcesSection />
 

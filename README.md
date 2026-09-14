@@ -1,6 +1,6 @@
 # Amratam Clinic
 
-Web platform for Amratam Clinic (Dr. Abhilasha Chourasiya — Electrohomeopathy & Bachflower, Indore). Public site plus an appointment booking system with a lightweight admin panel.
+Web platform for Amratam Clinic (Dr. Abhilasha Chourasiya — Electro Homeopathy & Bachflower, Indore). Public site plus an appointment booking system with a lightweight admin panel.
 
 ## Structure
 

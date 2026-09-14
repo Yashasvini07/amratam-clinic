@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/ui/Button";
-import { BlogPost } from "@/lib/blog";
+import { BlogPostMeta } from "@/lib/blog";
 
 type Props = {
-  article: BlogPost;
+  article: BlogPostMeta;
 };
 
 export default function FeaturedArticle({ article }: Props) {

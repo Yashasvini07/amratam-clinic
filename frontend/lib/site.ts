@@ -3,7 +3,7 @@ export const siteConfig = {
   doctor: "Dr. Abhilasha Chourasiya",
   url: "https://www.amratamclinic.com",
   description:
-    "Holistic healthcare through Electrohomeopathy and Bachflower.",
+    "Holistic healthcare through Electro Homeopathy and Bachflower.",
 };
 
 export const pageMetadata = {

@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { BlogPost } from "@/lib/blog";
+import { BlogPostMeta } from "@/lib/blog";
 
 type Props = {
-  article: BlogPost;
+  article: BlogPostMeta;
 };
 
 export default function ArticleCard({ article }: Props) {

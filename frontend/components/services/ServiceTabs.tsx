@@ -5,12 +5,16 @@ import { usePathname } from "next/navigation";
 
 const tabs = [
   {
-    label: "Electrohomeopathy",
+    label: "Electro Homeopathy",
     href: "/services/electrohomeopathy",
   },
   {
     label: "Bachflower",
     href: "/services/bachflower",
+  },
+  {
+    label: "Biochemic Tissue Salts",
+    href: "/services/biochemic-tissue-salts",
   },
 ];
 

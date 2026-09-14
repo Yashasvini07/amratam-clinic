@@ -1,8 +1,8 @@
-import { BlogPost } from "@/lib/blog";
+import { BlogPostMeta } from "@/lib/blog";
 import ArticleCard from "./ArticleCard";
 
 type Props = {
-  articles: BlogPost[];
+  articles: BlogPostMeta[];
 };
 
 export default function ArticleGrid({ articles }: Props) {

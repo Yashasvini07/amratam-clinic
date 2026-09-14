@@ -1,15 +1,24 @@
+import Image from "next/image";
 import Button from "@/components/ui/Button";
 import Container from "../ui/Container";
 import Link from "next/link";
 
 export default function Hero () {
     return (
-        <section className="relative h-[700px] bg-cover bg-center" style={{ backgroundImage: "url('/images/hero.avif')" }}>
+        <section className="relative h-[700px]">
+            <Image
+                src="/images/hero.png"
+                alt=""
+                fill
+                priority
+                sizes="100vw"
+                className="object-cover object-center -z-10"
+            />
             <div className="absolute inset-0 bg-black/60" />
             <Container className="relative z-10 h-full flex items-start pt-32 text-white">
                 <div className="max-w-lg flex flex-col gap-8">
                 <p className="text-sm uppercase tracking-[0.35em] text-[#D08F59]">
-                    HOLISTIC • NATURAL • EVIDENCE-BASED
+                    HOLISTIC • NATURAL • SCIENCE-BASED
                 </p>
 
                 <h1 className="max-w-3xl text-6xl leading-[1.15] text-white font-serif leading-tight">
@@ -19,7 +28,7 @@ export default function Hero () {
                 </h1>
 
                 <p className="max-w-xl text-lg leading-8 text-gray-200">
-                    Specialising in Electrohomeopathy and Bachflower, we offer personalised care that treats the whole person — body, mind, and vital energy.
+                    Specialising in Electro Homeopathy, Bachflower & Naturopathy, we offer personalised care that treats the whole person — body, mind, and vital energy.
                 </p>
                 
                 <div className="mt-10 flex gap-6">

@@ -22,11 +22,11 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.amratamclinic.com"),
-  title: "Dr. Abhilasha Chourasiya | Electrohomeopathy & Bachflower",
-  description: "Holistic healthcare through Electrohomeopathy and Bachflower. Personalized treatment plans focused on natural healing and long-term wellness.",
+  title: "Dr. Abhilasha Chourasiya | Electro Homeopathy & Bachflower",
+  description: "Holistic healthcare through Electro Homeopathy and Bachflower. Personalized treatment plans focused on natural healing and long-term wellness.",
 
   keywords: [
-    "Electrohomeopathy",
+    "Electro Homeopathy",
     "Bachflower",
     "Holistic Medicine",
     "Natural Healing",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Dr. Abhilasha Chourasiya",
     description:
-      "Holistic healthcare through Electrohomeopathy and Bachflower.",
+      "Holistic healthcare through Electro Homeopathy and Bachflower.",
     url: "https://www.amratamclinic.com",
     siteName: "Amratam Clinic",
 
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Dr. Abhilasha Chourasiya",
     description:
-      "Holistic healthcare through Electrohomeopathy and Bachflower.",
+      "Holistic healthcare through Electro Homeopathy and Bachflower.",
     images: ["/images/og-image.jpg"],
   },
 };

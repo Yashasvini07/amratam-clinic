@@ -39,7 +39,7 @@ export default function DoctorProfile() {
           {doctor.name}
         </h2>
 
-        <p className="mt-4 text-xl text-gray-500">
+        <p className="mt-4 whitespace-pre-line text-xl text-gray-500">
           {doctor.degree}
         </p>
 
@@ -71,7 +71,7 @@ export default function DoctorProfile() {
                   </p>
                 </div>
 
-                <p className="mt-4 text-lg font-medium text-[#264B43]">
+                <p className="mt-4 whitespace-pre-line text-lg font-medium text-[#264B43]">
                   {item.value}
                 </p>
               </div>
