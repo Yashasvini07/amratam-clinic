@@ -12,7 +12,7 @@ export default function Services() {
                     </p>
 
                     <h1 className="text-3xl text-gray-700 font-serif leading-tight sm:text-4xl md:text-5xl">
-                        Two disciplines, one purpose
+                        Many Paths to Wellness
                         <br />
                     </h1>
 

@@ -13,13 +13,13 @@ export default function AboutDoctor() {
                     MEET THE DOCTOR
                 </p>
             <h2 className="text-2xl font-bold text-[#D08F59] mb-4 sm:text-4xl sm:mb-6">Dr. Abhilasha Chourasiya</h2>
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-700 mb-4 text-justify">
                 Dr. Abhilasha Chourasiya is a highly skilled and compassionate practitioner of Electro Homeopathy and Bachflower, dedicated to providing holistic care to her patients. With over 15 years of experience in the field, she has helped countless individuals achieve optimal health and well-being through natural and evidence-based therapies.
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-700 mb-4 text-justify">
                 Her approach to healing is rooted in the belief that the body has an innate ability to heal itself when provided with the right support. She combines traditional knowledge with modern scientific research to create personalized treatment plans that address the unique needs of each patient.
             </p>
-            <p className="text-gray-700">
+            <p className="text-gray-700 text-justify">
                 Dr. Abhilasha is committed to empowering her patients with the knowledge and tools they need to take control of their health and live vibrant, fulfilling lives.
             </p>
             <Link href = "/about">
