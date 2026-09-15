@@ -58,6 +58,21 @@ public class TableServiceRepository(TableServiceClient tableServiceClient) : ISe
         await Table.AddEntityAsync(entity, cancellationToken);
     }
 
+    public async Task UpsertAsync(Service service, CancellationToken cancellationToken = default)
+    {
+        var entity = new ServiceTableEntity
+        {
+            RowKey = service.Id,
+            Slug = service.Slug,
+            Name = service.Name,
+            ShortDescription = service.ShortDescription,
+            DurationMinutes = service.DurationMinutes,
+            IsActive = service.IsActive,
+            DisplayOrder = service.DisplayOrder
+        };
+        await Table.UpsertEntityAsync(entity, TableUpdateMode.Merge, cancellationToken);
+    }
+
     private static Service ToDomain(ServiceTableEntity entity) => new()
     {
         Id = entity.RowKey,

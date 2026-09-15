@@ -1,24 +1,14 @@
 export const doctorInfo = [
   {
     title: "Qualifications",
-    value: "MD – Electrohomeopathy",
+    value: "MD – Electro Homeopathy\nB.F.R.P – London, UK\nDYS",
     icon: "award",
   },
   {
-    title: "Training",
-    value: "India • Germany • Italy",
-    icon: "globe",
-  },
-  {
     title: "Specialisation",
-    value: "Chronic & Complex Conditions",
+    value: "Chronic & Complex Conditions and Mental Health",
     icon: "heart",
-  },
-  {
-    title: "Research",
-    value: "Plant-based & Vibrational Medicine",
-    icon: "book",
-  },
+  }
 ];
 
 export const doctor = {
@@ -26,12 +16,12 @@ export const doctor = {
 
   designation: "Chief Practitioner",
 
-  degree: "MD – Electrohomeopathy",
+  degree: "MD – Electro Homeopathy\nB.F.R.P – London, UK\nDYS",
 
-  image: "/images/doctor.png",
+  image: "/images/doctor.jpeg",
 
   story: [
-    "Dr. Abhilasha Chourasiya has dedicated over fifteen years to helping patients restore health through natural and holistic medicine. Her work combines Electrohomeopathy and Bachflower to create personalised treatment plans that address the root cause of illness rather than merely managing symptoms.",
+    "Dr. Abhilasha Chourasiya has dedicated over fifteen years to helping patients restore health through natural and holistic medicine. Her work combines Electro Homeopathy and Bachflower to create personalised treatment plans that address the root cause of illness rather than merely managing symptoms.",
 
     "Every consultation is centred around understanding the individual. By considering lifestyle, nutrition, emotional wellbeing, and the body's natural healing capacity, she provides compassionate care designed for lasting wellness.",
 
@@ -79,7 +69,7 @@ export const philosophy = {
   "To build a healthier community where holistic medicine is trusted alongside conventional healthcare, helping people prevent disease, restore balance, and live healthier, more fulfilling lives.",
 
   statement:
-    "Modern medicine has achieved extraordinary advances in acute care and emergency treatment. Our role is complementary, supporting long-term health by addressing lifestyle, prevention and the underlying causes of chronic illness through evidence-informed natural medicine.",
+    "We take a holistic approach to natural healthcare, focusing on long-term wellbeing, prevention, healthy lifestyle and the underlying factors associated with chronic health concerns. Our approach can be used independently or alongside conventional medical care, allowing both approaches to work hand in hand when appropriate.",
 };
 
 export const clinicExpertise = {
@@ -101,5 +91,18 @@ export const clinicExpertise = {
     "Digestive Health (Acidity)",
     "Piles (Hemorrhoids)",
     "Seasonal Viral Illnesses",
+    "Mental & Emotional Wellbeing",
+    "Depressive Symptoms",
+    "Anxiety & Stress",
+    "Fear & Phobias",
+    "Sleep Disorders (Insomnia)",
+    "Anger & Emotional Regulation",
+    "Aggressive Behaviour",
+    "Paediatric Wellness",
+    "Acute Diarrhoea",
+    "Childhood Behavioural Concerns",
+    "Test & Performance Anxiety",
+    "Mood Changes & Emotional Regulation",
+    "Emotional Dysregulation"
   ],
 };

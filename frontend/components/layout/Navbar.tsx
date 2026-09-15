@@ -40,7 +40,7 @@ export default function Navbar() {
                 />
                 <div>
                     <h1 className="font-[family:var(--font-cormorant)] text-base text-gray-900 sm:text-lg md:text-xl">Dr. Abhilasha Chourasiya</h1>
-                    <p className="text-xs text-gray-500 md:text-sm">MD-Electrohomeopathy</p>
+                    <p className="text-xs text-gray-500 md:text-sm">MD-Electro Homeopathy</p>
                 </div>
             </Link>
 

@@ -27,9 +27,9 @@ export const services: Service[] = [
   {
     slug: "electrohomeopathy",
 
-    tab: "Electrohomeopathy",
+    tab: "Electro Homeopathy",
 
-    title: "Electrohomeopathy",
+    title: "Electro Homeopathy",
 
     subtitle: "Plant-based healing through gentle bioenergetic remedies.",
 
@@ -37,12 +37,12 @@ export const services: Service[] = [
 
     heroImage: "/images/services/electrohomeopathy.jpg",
 
-    shortDescription: "A holistic approach to healing that uses natural remedies and therapies to support the body&rsquo;s innate healing abilities.",
+    shortDescription: "A holistic approach to healing that uses natural remedies and therapies to support the body’s innate healing abilities.",
 
     content: (
   <>
     <p>
-      <strong>Electrohomeopathy</strong> is a complementary system of healthcare
+      <strong>Electro Homeopathy</strong> is a complementary system of healthcare
       developed in the 19th century by <strong>Count Cesare Mattei
       (1809–1896)</strong> of Italy. It is founded on the philosophy that the
       body possesses an inherent ability to maintain and restore health when
@@ -51,21 +51,21 @@ export const services: Service[] = [
 
     <p className="mt-6">
       Unlike conventional medicine, which often focuses on diagnosing and
-      treating specific diseases, <strong>Electrohomeopathy takes a holistic
+      treating specific diseases, <strong>Electro Homeopathy takes a holistic
       approach</strong>, considering the individual as a whole—physically,
-      mentally, and constitutionally. The aim is to support the body&rsquo;s overall
+      mentally, and constitutionally. The aim is to support the body’s overall
       functioning rather than focusing solely on isolated symptoms.
     </p>
 
     <p className="mt-6">
-      The remedies used in Electrohomeopathy are prepared from carefully
+      The remedies used in Electro Homeopathy are prepared from carefully
       selected medicinal plants using specialised extraction methods. These
-      botanical formulations are intended to support the body&rsquo;s natural
+      botanical formulations are intended to support the body’s natural
       physiological balance and overall wellbeing.
     </p>
 
     <p className="mt-6">
-      In today&rsquo;s era of standardised diagnosis and generic treatment
+      In today’s era of standardised diagnosis and generic treatment
       approaches, we believe in <strong>personalised patient care</strong>.
       Every individual is unique, and no two patients are exactly alike. Even
       when two people present with similar symptoms, they may receive different
@@ -89,7 +89,7 @@ export const services: Service[] = [
       {
         step: "Assessment",
         description:
-          "Evaluation of the body&rsquo;s constitution and underlying imbalances.",
+          "Evaluation of the body’s constitution and underlying imbalances.",
       },
       {
         step: "Treatment",
@@ -111,9 +111,9 @@ export const services: Service[] = [
 
     faqs: [
       {
-        question: "Is Electrohomeopathy safe?",
+        question: "Is Electro Homeopathy safe?",
         answer:
-          "Yes. Treatments use plant-derived remedies and are prescribed according to the individual&rsquo;s health condition.",
+          "Yes. Treatments use plant-derived remedies and are prescribed according to the individual’s health condition.",
       },
       {
         question: "How many sessions will I need?",
@@ -136,7 +136,7 @@ export const services: Service[] = [
 
     heroImage: "/images/services/bachflower.png",
 
-    shortDescription: "A natural and evidence-based approach to healthcare that focuses on prevention, wellness, and the body&apos;s ability to heal itself.",
+    shortDescription: "A natural and evidence-based approach to healthcare that focuses on prevention, wellness, and the body’s ability to heal itself.",
 
     content: (
   <>
@@ -145,7 +145,7 @@ export const services: Service[] = [
       healing developed by <strong>Dr. Edward Bach</strong> in the 1930s. The
       system is based on the belief that emotional wellbeing plays an important
       role in overall health, and that restoring emotional balance can support
-      a person&rsquo;s sense of wellbeing.
+      a person’s sense of wellbeing.
     </p>
 
     <p className="mt-6">
@@ -166,7 +166,7 @@ export const services: Service[] = [
     <p className="mt-6">
       At Amratam Clinic, Bach Flower Remedies are prescribed as part of a
       <strong> personalised treatment plan</strong>. They may be recommended
-      alongside other complementary therapies based on each patient&rsquo;s emotional
+      alongside other complementary therapies based on each patient’s emotional
       wellbeing, lifestyle, and overall health goals.
     </p>
 
@@ -209,7 +209,7 @@ export const services: Service[] = [
       "Sleep disorders",
       "Digestive issues",
       "Lifestyle diseases",
-      "Women&rsquo;s health",
+      "Women’s health",
       "Immunity",
       "General wellness",
     ],
@@ -224,6 +224,87 @@ export const services: Service[] = [
         question: "Will I receive a personalised treatment plan?",
         answer:
           "Yes. Every consultation results in recommendations tailored specifically to your health goals and medical history.",
+      },
+    ],
+  },
+
+  {
+    slug: "biochemic-tissue-salts",
+
+    tab: "Biochemic Tissue Salts",
+
+    title: "Bio Chemic Tissue Salts & Naturopathy",
+
+    subtitle: "Restoring the body’s natural mineral balance.",
+
+    category: "MINERAL THERAPY",
+
+    heroImage: "/images/services/naturopathy.png",
+
+    shortDescription:
+      "Mineral-based remedies developed by Dr. Schuessler, supporting bone, mood, nerve and muscle health by restoring the body’s natural cellular balance.",
+
+    content: (
+  <>
+    <p>
+      <strong>Tissue Salts</strong> were developed in 1870 by <strong>Dr.
+      Schuessler</strong>, a German homeopath. They are obtained from nature
+      and recommended for bone health, mood, nerve pain, muscle weakness,
+      digestive issues, skin problems, and more.
+    </p>
+
+    <p className="mt-6">
+      This theory is based on the idea that each cell of the human body
+      contains specific minerals, and that these minerals need to be in
+      balance for optimum health. If an individual mineral is lacking,
+      specific symptoms appear in the form of illness.
+    </p>
+  </>
+),
+
+    benefits: [
+      "Supports bone, muscle and nerve health",
+      "Restores natural mineral balance in the body’s cells",
+      "Gentle, nature-derived remedies",
+    ],
+
+    process: [
+      {
+        step: "Consultation",
+        description:
+          "A review of your health history and specific symptoms.",
+      },
+      {
+        step: "Assessment",
+        description:
+          "Identifying which cellular minerals may be out of balance.",
+      },
+      {
+        step: "Treatment",
+        description:
+          "Personalised tissue salt remedies to restore balance, with ongoing follow-up.",
+      },
+    ],
+
+    conditions: [
+      "Bone health",
+      "Mood",
+      "Nerve pain",
+      "Muscle weakness",
+      "Digestive issues",
+      "Skin problems",
+    ],
+
+    faqs: [
+      {
+        question: "What are biochemic tissue salts?",
+        answer:
+          "They are mineral-based remedies developed by Dr. Schuessler in 1870, based on the idea that balanced cellular minerals support optimum health.",
+      },
+      {
+        question: "Are tissue salts safe?",
+        answer:
+          "Yes. They are naturally derived and prescribed as part of a personalised treatment plan based on your individual mineral balance needs.",
       },
     ],
   },

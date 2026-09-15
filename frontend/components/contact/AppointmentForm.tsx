@@ -4,7 +4,6 @@ import { FormEvent, useEffect, useState } from "react";
 import Button from "@/components/ui/Button";
 import {
   ApiError,
-  ApiService,
   Slot,
   createAppointment,
   getAvailability,
@@ -40,9 +39,6 @@ function formatSlotLabel(time: string) {
 }
 
 export default function AppointmentForm() {
-  const [services, setServices] = useState<ApiService[]>([]);
-  const [servicesError, setServicesError] = useState(false);
-
   const [serviceId, setServiceId] = useState("");
   const [appointmentDate, setAppointmentDate] = useState(todayIsoDate());
   const [slots, setSlots] = useState<Slot[]>([]);
@@ -64,10 +60,9 @@ export default function AppointmentForm() {
   useEffect(() => {
     getServices()
       .then((data) => {
-        setServices(data);
         if (data.length > 0) setServiceId(data[0].id);
       })
-      .catch(() => setServicesError(true));
+      .catch(() => {});
   }, []);
 
   useEffect(() => {
@@ -188,7 +183,7 @@ export default function AppointmentForm() {
             <input
               type="tel"
               inputMode="numeric"
-              placeholder="98765 43210"
+              placeholder="Enter 10-digit mobile number"
               value={patientPhone}
               maxLength={10}
               onChange={(e) => setPatientPhone(e.target.value.replace(/\D/g, "").slice(0, 10))}
@@ -197,30 +192,6 @@ export default function AppointmentForm() {
             />
           </div>
           {phoneError && <p className="mt-1 text-sm text-red-600">{phoneError}</p>}
-        </div>
-
-        <div>
-          <label className="mb-2 block text-xs uppercase tracking-[0.2em] text-gray-600">
-            Interested In *
-          </label>
-
-          <select
-            className="w-full rounded-lg border border-stone-200 bg-[#FDFBF8] p-4"
-            value={serviceId}
-            onChange={(e) => setServiceId(e.target.value)}
-          >
-            {services.length === 0 && <option value="">Loading services...</option>}
-            {services.map((service) => (
-              <option key={service.id} value={service.id}>
-                {service.name}
-              </option>
-            ))}
-          </select>
-          {servicesError && (
-            <p className="mt-1 text-sm text-red-600">
-              Couldn&rsquo;t load services. Please refresh the page.
-            </p>
-          )}
         </div>
       </div>
 

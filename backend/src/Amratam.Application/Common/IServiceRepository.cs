@@ -8,4 +8,5 @@ public interface IServiceRepository
     Task<Service?> GetByIdAsync(string id, CancellationToken cancellationToken = default);
     Task<bool> AnyAsync(CancellationToken cancellationToken = default);
     Task AddAsync(Service service, CancellationToken cancellationToken = default);
+    Task UpsertAsync(Service service, CancellationToken cancellationToken = default);
 }

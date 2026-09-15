@@ -1,5 +1,5 @@
 import { FaYoutube, FaInstagram } from "react-icons/fa";
-import { FileText} from "lucide-react";
+import { FileText } from "lucide-react";
 import { clinic } from "@/lib/clinic";
 import Link from "next/link";
 
@@ -11,7 +11,7 @@ export default function ResourcesSection() {
       description:
         "Watch educational videos covering holistic health, natural therapies and wellness tips.",
       href: clinic.socials.youtube,
-      comingSoon: false,
+      external: true,
     },
     {
       title: "Instagram",
@@ -19,15 +19,15 @@ export default function ResourcesSection() {
       description:
         "Daily wellness inspiration, patient education and clinic updates.",
       href: clinic.socials.instagram,
-      comingSoon: false,
+      external: true,
     },
     {
       title: "Patient Resources",
       description:
         "Downloadable wellness guides, consultation preparation and educational material.",
       icon: FileText,
-      href: "#",
-      comingSoon: true,
+      href: "/blog?tab=resources#blog-tabs",
+      external: false,
     },
   ];
 
@@ -53,9 +53,9 @@ export default function ResourcesSection() {
               <Link
                 key={resource.title}
                 href={resource.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block cursor-pointer rounded-xl border border-stone-200 bg-white p-8 transition-all hover:-translate-y-1 hover:shadow-lg block"
+                target={resource.external ? "_blank" : undefined}
+                rel={resource.external ? "noopener noreferrer" : undefined}
+                className="block cursor-pointer rounded-xl border border-stone-200 bg-white p-8 transition-all hover:-translate-y-1 hover:shadow-lg"
               >
                 <Icon
                   size={36}
@@ -69,13 +69,6 @@ export default function ResourcesSection() {
                 <p className="mt-4 leading-8 text-gray-600">
                   {resource.description}
                 </p>
-
-                {resource.comingSoon && (
-                  <span className="mt-6 inline-block rounded-full bg-stone-100 px-4 py-2 text-sm text-gray-600">
-                    Coming Soon
-                  </span>
-                )}
-
               </Link>
             );
           })}

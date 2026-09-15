@@ -35,7 +35,7 @@ export default function Footer() {
             </p>
 
             <p className="text-sm text-gray-300">
-              Holistic healing through Electrohomeopathy and Bachflower.
+              Holistic healing through Electro Homeopathy, Bachflower and Naturopathy.
             </p>
           </div>
         </div>

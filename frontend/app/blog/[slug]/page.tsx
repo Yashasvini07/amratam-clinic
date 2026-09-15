@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { blogPosts } from "@/lib/blog";
+import ArticleBody from "@/components/blog/ArticleBody";
 
 type Props = {
   params: Promise<{
@@ -36,9 +37,7 @@ export default async function BlogArticle({ params }: Props) {
           {article.author} • {article.publishedOn} • {article.readingTime}
         </p>
 
-        <article className="prose prose-base mt-10 max-w-none sm:prose-lg sm:mt-16">
-          <p>{article.content}</p>
-        </article>
+        <ArticleBody content={article.content} />
 
       </main>
 
