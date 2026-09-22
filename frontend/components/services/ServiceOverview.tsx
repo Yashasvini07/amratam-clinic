@@ -36,9 +36,9 @@ export default function ServiceOverview({
             {title}
           </h2>
 
-          <p className="mt-6 text-base leading-7 text-gray-600 sm:mt-8 sm:text-lg sm:leading-9">
+          <div className="mt-6 text-base leading-7 text-gray-600 sm:mt-8 sm:text-lg sm:leading-9">
             {content}
-          </p>
+          </div>
         </div>
       </div>
     </section>

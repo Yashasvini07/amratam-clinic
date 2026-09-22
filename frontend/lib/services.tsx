@@ -42,7 +42,7 @@ export const services: Service[] = [
     content: (
   <>
     <p>
-      <strong>Electro Homeopathy</strong> is a complementary system of healthcare
+      <strong>Electro Homeopathy</strong> is a complete system of healthcare
       developed in the 19th century by <strong>Count Cesare Mattei
       (1809–1896)</strong> of Italy. It is founded on the philosophy that the
       body possesses an inherent ability to maintain and restore health when
@@ -50,18 +50,20 @@ export const services: Service[] = [
     </p>
 
     <p className="mt-6">
+      Electro Homeopathy is a harmless, unique, 100% natural scientific system
+      of medicine that contains no chemicals and has no side effects.
+    </p>
+
+    <p className="mt-6">
       Unlike conventional medicine, which often focuses on diagnosing and
       treating specific diseases, <strong>Electro Homeopathy takes a holistic
-      approach</strong>, considering the individual as a whole—physically,
+      approach</strong>, considering the individual as a whole&mdash;physically,
       mentally, and constitutionally. The aim is to support the body’s overall
       functioning rather than focusing solely on isolated symptoms.
     </p>
 
     <p className="mt-6">
-      The remedies used in Electro Homeopathy are prepared from carefully
-      selected medicinal plants using specialised extraction methods. These
-      botanical formulations are intended to support the body’s natural
-      physiological balance and overall wellbeing.
+      Electro Homeopathy improves all body systems, purifies the lymph and blood, corrects deficiencies or excesses in the body, and brings recovery from diseases gently, speedily, completely and permanently. The remedies used in Electro Homeopathy are prepared from carefully selected medicinal plants using specialised extraction methods. These botanical formulations are intended to support the body’s natural physiological balance and overall wellbeing.
     </p>
 
     <p className="mt-6">
@@ -130,7 +132,7 @@ export const services: Service[] = [
 
     title: "Bachflower",
 
-    subtitle: "Supporting wellness through nutrition, lifestyle and nature.",
+    subtitle: "Supporting wellness through emotional revitalisation and stress reduction.",
 
     category: "PLANT-BASED REMEDIES",
 
@@ -154,6 +156,14 @@ export const services: Service[] = [
       using traditional methods and are intended to help individuals navigate
       emotions such as fear, worry, stress, uncertainty, sadness, frustration,
       and lack of confidence.
+    </p>
+
+    <p className="mt-6">
+      Some chronic health conditions may be influenced by emotional stress and
+      negative mental states, even when no clear medical cause is identified.
+      Examples include asthma, cancer, allergies, insomnia, high blood
+      pressure, and many other psychosomatic conditions. Bach Flower Remedies
+      help address emotional imbalances and treat psychosomatic diseases.
     </p>
 
     <p className="mt-6">
@@ -235,7 +245,7 @@ export const services: Service[] = [
 
     title: "Bio Chemic Tissue Salts & Naturopathy",
 
-    subtitle: "Restoring the body’s natural mineral balance.",
+    subtitle: "Restoring the body’s natural mineral balance and nutrition.",
 
     category: "MINERAL THERAPY",
 

@@ -1,7 +1,7 @@
 export const doctorInfo = [
   {
     title: "Qualifications",
-    value: "MD – Electro Homeopathy\nB.F.R.P – London, UK\nDYS",
+    value: "M.D. – Electro Homeopathy\nB.F.R.P. – London, UK\nD.N.Y.S.",
     icon: "award",
   },
   {
@@ -16,7 +16,7 @@ export const doctor = {
 
   designation: "Chief Practitioner",
 
-  degree: "MD – Electro Homeopathy\nB.F.R.P – London, UK\nDYS",
+  degree: "M.D. – Electro Homeopathy\nB.F.R.P. – London, UK\nD.N.Y.S.",
 
   image: "/images/doctor.jpeg",
 
