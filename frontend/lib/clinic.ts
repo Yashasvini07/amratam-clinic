@@ -3,7 +3,7 @@ export const clinic = {
 
   doctor: "Dr. Abhilasha Chourasiya",
 
-  degree: "MD - Electro Homeopathy",
+  degree: "M.D. – Electro Homeopathy",
 
   address: [
     "Ground Floor, Shail-Go Arcade",
